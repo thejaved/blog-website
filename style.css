@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+}
+:root {
+  --primary: #ca89ff;
+  --secondary: #56068b;
+  --white: #fff;
+  --black: #000;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--primary);
+}
+
+/* main page css  */
+
+header {
+  width: 100%;
+  height: 6rem;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  box-shadow: 0 10px 30px 5px rgb(0 0 0/20%);
+}
+a {
+  text-decoration: none;
+}
+header a {
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  box-shadow: 0 10px 30px 5px rgb(0 0 0/10%);
+  cursor: pointer;
+}
+.search {
+  width: 100%;
+  padding: 1rem;
+}
+.search input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: var(--black);
+  border-radius: 0.5rem;
+}
+.data_container {
+  width: 100%;
+  padding: 0.5rem 3rem;
+}
+.Cards {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--secondary);
+  margin: 1rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+.Cards h1 {
+  font-size: 2rem;
+}
+.Cards a {
+  color: var(--primary);
+}
+
+/* Create Page Css  */
+
+.create_page_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 3rem;
+}
+.input_container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.input_container form input {
+  height: 2.5rem;
+}
+.input_container form input,
+.input_container form textarea {
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  color: var(--black);
+  border-bottom: 5px solid var(--secondary);
+}
+.input_container form button,
+.delete {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0 10px 30px 5px rgb(0 0 0/10%);
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+/* details Page Css  */
+.details_mein_container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
