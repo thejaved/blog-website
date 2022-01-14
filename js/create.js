@@ -10,7 +10,7 @@ from.addEventListener("submit", async (e) => {
   await fetch("http://localhost:5000/posts/", {
     method: "POST",
     body: JSON.stringify(newData),
-    headers: { "Ccntent-Type": "application/json" },
+    headers: { "Content-Type": "application/json" },
   });
   window.location.replace("/");
 });
